@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #9994941a;
+    color: #333333;
+
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(6, 2, 37);
+    color: white;
+    padding: 20px 30px;
+}
+
+.profile-name {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile-name:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+
+.links a:hover {
+    text-decoration: underline !important;
+}
+
+.about{
+    background-color: white;
+    padding: 60px 40px; 
+    display: flex;
+    align-items: center;
+} 
+
+.about img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.intro h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: gray;
+}
+
+
+h2 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+}
+/* Education Section*/
+.education {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f2f4f5 0%, #e1e2e3 100%);
+    color: white;
+}
+
+.education h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.education-timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #3498db, #9b59b6);
+    transform: translateX(-50%);
+}
+
+.edu-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 45%;
+    color: #333;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #3498db;
+    background: white;
+}
+
+.edu-card:nth-child(odd) {
+    margin-right: auto;
+}
+
+.edu-card:nth-child(even) {
+    margin-left: auto;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.degree {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.year-badge {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.institution {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.institution i {
+    color: #3498db;
+}
+
+.board {
+    background: #e74c3c;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.branch {
+    color: #9b59b6;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.branch i {
+    color: #9b59b6;
+}
+
+.score {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .education-timeline::before {
+        left: 20px;
+    }
+    
+    .edu-card {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+    }
+    
+    .education {
+        padding: 40px 15px;
+    }
+    
+    .education h2 {
+        font-size: 2em;
+    }
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+.skills {
+    padding: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.skill {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+.skills-grid img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.contact {
+    background-color: rgb(6, 2, 37);
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 0px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+    height: 8px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: inherit !important; 
+} 
+
+.alert {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.btn-light {
+    color: #000 !important; 
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #3498db, #2980b9) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4) !important;
+    background: linear-gradient(45deg, #2980b9, #3498db) !important;
+    color: white !important;
+}
+
+.launch-btn {
+    background: #eef0f1;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+    transition: all 0.3s ease;
+}
+
+.launch-btn:hover {
+    background: #dadbdb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.4);
+    color: white;
+}
